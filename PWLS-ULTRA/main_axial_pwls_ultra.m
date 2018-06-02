@@ -188,5 +188,4 @@ legend('PWLS-ULTRA')
 % im('mid3','notick', permute(info.xrla,[2 1 3]),[800,1200])
 
 % save('info.mat', 'info')
-% export_fig x.pdf -transparent
 

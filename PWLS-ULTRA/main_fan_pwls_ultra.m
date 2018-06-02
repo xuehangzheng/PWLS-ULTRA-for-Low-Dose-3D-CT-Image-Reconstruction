@@ -73,21 +73,21 @@ KapPatch = mean(KapPatch,1);
 Kappa = col2imstep(single(repmat(KapPatch, prod(PatSiz), 1)), ImgSiz, PatSiz, SldDist);
 
 
-KapType = 0;
+KapType = 1;
 
 switch KapType
     
     case 0  % no patch-based weighting
-        beta = 1.5e5;
-        gamma = 18;
+        beta = 2e5;
+        gamma = 20;
         
         D_R = 2 * beta * KK(ig.mask) * maxLambda; clear PP KK
         % D_R = 2 * beta * prod(PatSiz)/ prod(SldDist) * maxLambda;
         R = Reg_OST(ig.mask, ImgSiz, PatSiz, SldDist, beta, gamma, mOmega, numBlock, CluInt);
         
     case 1  % patch-based weighting \tau * { \|~~\|_2 + \|~~\|_0 }
-        beta = 1e4;
-        gamma = 25;
+        beta = 1.3e4;
+        gamma = 22;
         
         D_R = 2 * beta * Kappa(ig.mask) * maxLambda;  clear maxLambda Kappa;
         % construct regularizer R(x)
@@ -161,10 +161,9 @@ end
 % end
 
 %%
-save(sprintf('./result/%.1ekap3_blk%g_beta%.1e_gam%g_clu%g_learn125.mat', I0, ...
-    numBlock, beta, gamma, CluInt), 'info')
+% save(sprintf('./result/%.1ekap1_blk%g_beta%.1e_gam%g_clu%g_learn125.mat', I0, ...
+%     numBlock, beta, gamma, CluInt), 'info')
 % imshow(cat(2, info.xrla, xini), [800 1200]);
-% export_fig x.pdf -transparent
 
 
 % figure name 'SSIM'
