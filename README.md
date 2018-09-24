@@ -11,6 +11,7 @@ We provide XCAT phantom[1], some pre-learned transforms (and dictionary), and re
 Implementation:
 
 The codes should be run with Michigan Image Reconstruction Toolbox (MIRT). http://web.eecs.umich.edu/~fessler/code/index.html
+
 Note that this toolbox only supports Linux/Mac. Before running the main code for reconstruction, you just need to run "setup.m" in MIRT.
 
 
