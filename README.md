@@ -4,6 +4,8 @@ IEEE Xplore: https://ieeexplore.ieee.org/document/8352798/
 
 Arxiv: https://arxiv.org/abs/1703.09165
 
+![image](https://github.com/xuehangzheng/PWLS-ULTRA-for-Low-Dose-3D-CT-Image-Reconstruction/blob/master/Diagram_of_PWLS-ULTRA.pdf)
+
 # Data:
 
 We provide XCAT phantom[1](both 2D slices and 3D volume), some pre-learned transforms (and dictionary), and reconstructions for initialization used in this paper. So you could quickly reproduce results in our paper right after running the main code of the specific mehthod that you are interested.
