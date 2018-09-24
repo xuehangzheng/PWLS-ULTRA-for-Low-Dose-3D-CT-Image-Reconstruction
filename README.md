@@ -4,7 +4,7 @@ IEEE Xplore: https://ieeexplore.ieee.org/document/8352798/
 
 Arxiv: https://arxiv.org/abs/1703.09165
 
-![image](https://github.com/xuehangzheng/PWLS-ULTRA-for-Low-Dose-3D-CT-Image-Reconstruction/blob/master/Diagram_of_PWLS-ULTRA.pdf)
+![Diagram_PWLS-ULTRA](https://github.com/xuehangzheng/PWLS-ULTRA-for-Low-Dose-3D-CT-Image-Reconstruction/blob/master/Diagram_PWLS-ULTRA.png)
 
 # Data:
 
