@@ -8,11 +8,14 @@ Arxiv: https://arxiv.org/abs/1703.09165
 
 We provide XCAT phantom[1](both 2D slices and 3D volume), some pre-learned transforms (and dictionary), and reconstructions for initialization used in this paper. So you could quickly reproduce results in our paper right after running the main code of the specific mehthod that you are interested.
 
+"axial_proj_data_maker_HU.m/fan_proj_data_maker_HU.m" is used for simulating 3D cone-beam (2D fan-beam) geometry, generating corresponding (noisy) sinograms, and performing FDK on these sinograms, etc.
+
 # Implementation:
 
 The codes should be run with Michigan Image Reconstruction Toolbox (MIRT). http://web.eecs.umich.edu/~fessler/code/index.html
 
 Note that this toolbox only supports Linux/Mac. Before running the main code for reconstruction, you just need to run "setup.m" in MIRT.
+
 
 
 # Comparison Methods:
