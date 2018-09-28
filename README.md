@@ -22,7 +22,7 @@ Note that this toolbox only supports Linux/Mac. Before running the main code for
 
 # Comparison Methods:
 
-We also provide our own implmentations of the comparison methods in this paper: PWLS-EP[2], PWLS-DL[3]. 
+We also provide our own implmentations of the methods for comparison in this paper: PWLS-EP[2], PWLS-DL[3]. 
 
 
 # Reference: 
