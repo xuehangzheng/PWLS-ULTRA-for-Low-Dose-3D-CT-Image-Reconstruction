@@ -14,7 +14,7 @@ numBlock = 5;         % number of clusters
 
 patch = [];
 for ii=[10 30 40 50 80]  % training data
-    %   for ii = 45          % testing data
+    %   for ii = 48          % testing data
     image = downsample2(phantom(:, : , ii), 2);
     patch_tmp = im2colstep(single(image), PatSiz, SldDist);
     patch = [patch patch_tmp];

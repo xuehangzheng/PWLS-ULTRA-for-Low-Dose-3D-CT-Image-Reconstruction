@@ -15,7 +15,7 @@ gamma = 110;
 
 patch=[];
 for ii=[10 30 40 50 80]  % training data
-    %  for ii = 45     % testing data
+    %  for ii = 48     % testing data
     image = downsample2(phantom(:, :, ii), 2);
     % The Mathworks 'im2col' is quicker but only for stride 1.
     %    patch_tmp = im2col(image, sqrt(l) * [1 1], 'sliding');
