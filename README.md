@@ -8,7 +8,7 @@ Arxiv: https://arxiv.org/abs/1703.09165
 
 # Data:
 
-We provide XCAT phantom[1](both 2D slices and 3D volume), some pre-learned transforms (and dictionary), and reconstructions for initialization used in this paper. So you could quickly reproduce results in our paper right after running the main code of the specific mehthod that you are interested.
+We provide XCAT phantom [1](both 2D slices and 3D volume), pre-learned transforms (and dictionary), and reconstructions for initialization, that were used in this paper. So you could quickly reproduce results in our paper right after running the main code of one specific method.
 
 "axial_proj_data_maker_HU.m/fan_proj_data_maker_HU.m" is used for simulating 3D cone-beam (2D fan-beam) geometry, generating corresponding (noisy) sinograms, and performing FDK on these sinograms, etc.
 
