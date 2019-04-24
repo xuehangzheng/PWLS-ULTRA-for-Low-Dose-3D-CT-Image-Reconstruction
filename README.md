@@ -14,10 +14,8 @@ We provide XCAT phantom [1] (both 2D slices and 3D volume), pre-learned transfor
 
 Codes should be run with Michigan Image Reconstruction Toolbox (MIRT). http://web.eecs.umich.edu/~fessler/code/index.html
 
-Note that this toolbox only supports Linux/Mac. Before running the main code for reconstruction, you just need to run "setup.m" in MIRT.
-
-"axial_proj_data_maker_HU.m/fan_proj_data_maker_HU.m" is used for simulating 3D cone-beam/2D fan-beam geometry, generating corresponding (noisy) sinograms, and performing FDK(FBP) to reconstruct these simulated sinograms, etc.
-
+Note that this toolbox only supports Linux/Mac. Before running the main code for reconstruction (e.g., "main_axial_pwls_ultra.m/main_axial_pwls_st.m"), you just need to run "setup.m" in MIRT.
+And then run "axial_proj_data_maker_HU.m/fan_proj_data_maker_HU.m" to pre-compute the (noisy) sinograms, weighting matrix, kappa map, and majorzing matrix, which will are stored in "data/3Dxcat/tmp/" or "data/2Dxcat/tmp/". 
 
 # Comparison Methods:
 
