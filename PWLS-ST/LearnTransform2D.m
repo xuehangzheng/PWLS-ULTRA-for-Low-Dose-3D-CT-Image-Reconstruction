@@ -24,6 +24,7 @@ for ii=[10 30 40 50 80]  % training data
     patch = [patch patch_tmp];
 end
 fprintf('Length of training set: %d\n', size(patch, 2));
+patch = double(patch);
 
 mOmega = kron(dctmtx(sqrt(l)),dctmtx(sqrt(l)));% DCT Initialization
 lambada = lambada0 * norm(patch,'fro')^2;
